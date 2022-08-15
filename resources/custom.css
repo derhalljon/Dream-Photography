@@ -1,0 +1,17 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', "Geneva", Verdana, "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    background-color: antiquewhite;
+    background-size: cover;
+
+}
+
+* {
+    box-sizing: border-box;
+
+}
+

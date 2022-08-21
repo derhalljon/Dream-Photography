@@ -1,12 +1,15 @@
-body, html {
-    height: 100%;
-    margin: 0;
+/* BASIC STYLES START */
+body, 
+html {
     font-size: 1em;
+    line-height: 1.5rem;
+    box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', "Geneva", Verdana, "Montserrat", sans-serif;
-    font-weight: 400;
-    line-height: 1.8;
-    background-color: antiquewhite;
-    background-size: cover;
+    height: 100%;   
+    margin: 0 20px 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
 
 }
 
@@ -15,3 +18,400 @@ body, html {
 
 }
 
+*::before {
+    box-sizing: inherit;
+
+}
+
+*::after {
+    box-sizing: inherit;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+h2 {
+    text-align: -webkit-center;
+    text-decoration: underline;
+    
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #800020;
+    display: block;
+    margin: 0 auto;
+
+}
+
+/* BASIC STYLES END */
+
+/* NAVBAR START */
+
+.logo-picture {
+    width: 75px;
+    height: 60px;
+
+}
+
+.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.logo,
+.nav-menu {
+    text-transform: uppercase;
+
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+}
+
+.nav-item {
+    flex: 1 0 50%;
+    text-align: center;
+
+}
+
+.logo a,
+.nav-menu a {
+    display: block;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    padding: 0.8rem;
+    color: #800020;
+
+}
+
+.logo a {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.logo {
+    margin: 0 auto;
+
+}
+
+.logo a:hover {
+    background-color: white;
+    color: #800020;
+    font-weight: bold;
+    transform: none;
+    transition: all ease 0.2s;
+
+}
+
+.nav-menu a {
+    letter-spacing: 0.2rem;
+    border-bottom: 1px solid #fff;
+    transition: all ease 0.2s;
+
+}
+
+.nav-menu a:hover {
+    background-color: white;
+    color: #800020;
+    font-weight: bold;
+    transform: none;
+    transition: all ease 0.2s;
+
+}
+
+.nav-menu a:active {
+    transform: scale(0.9);
+
+}
+
+/* NAVBAR END */
+
+/* GRID GALLERY STYLES START */
+
+.gallery-page {
+    padding: 0 1rem 10rem 1rem;
+
+}
+
+.gallery-auto-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+    grid-gap: 0.5rem;
+
+}
+
+.gallery-item {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.gallery-img {
+    height: 100%;
+    object-fit: cover;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
+}
+
+.gallery-img:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+}
+
+/* GRID GALLERY STYLES END */
+
+/* AWARDS SECTION START */
+
+#awards {
+    background-color: lightgray;
+    padding-bottom: 25px;
+
+}
+
+.award-year {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-bottom: 15px;
+
+}
+
+.award-description {
+    line-height: 0.8rem;
+    font-weight: 600;
+}
+
+/* AWARDS SECTION END */
+
+/**/
+
+.buy-prints {
+    text-shadow: 3px 3px 0 #800020;
+}
+
+
+/* JUMBOTRON START */
+
+.to-shop-button {
+    background-color: #800020;
+
+}
+
+/* JUMBOTRON END*/
+
+/* MEDIA QUERIES LARGE SCREENS START */
+
+@media (min-width: 600px) {
+    .header-nav {
+        line-height: 1.5rem;
+
+    }
+    .nav-menu {
+        width: 100%;
+
+    }
+    .nav-item {
+        flex: 1 0 10%;
+    }
+}
+
+@media (min-width: 900px) {
+    .header-nav {
+        justify-content: space-between;
+        padding: 1rem 0;
+        margin: 1rem auto 2 rem auto;
+        line-height: 1rem;
+    }
+
+    .nav-item {
+        white-space: nowrap;
+
+    }
+
+    .nav-menu {
+        width: auto;
+
+    }
+
+    .logo {
+        margin: 0 0 0 0.3rem;
+
+    }
+}
+
+/* MEDIA QUERIES LARGE SCREENS END */
+
+/* NAVBAR END */
+
+/* DRONE PAGE START */
+
+.drone-page {
+    width: 100%;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.drone-page-coming-soon {
+    height: 1250px;
+    font-size: 6rem;
+    text-shadow: 3px 3px 0 #800020;
+
+}
+
+/* DRONE PAGE END */
+
+/* BUTTONS START */
+
+.to-shop-button {
+    background-color: #800020 !important;
+}
+
+/* BUTTONS END*/
+
+/* FOOTER START */
+
+.page-footer {
+    height: 200px;
+    background-color: white;
+    
+}
+
+footer a {
+    color: black;
+
+}
+
+.footer-copyright-bottom {
+    height: auto;
+    font-size: 1.5rem;
+
+}
+
+/* FOOTER END */
+
+
+
+/* STACKED PHOTOS REVEALED 
+  HTML
+  <div class="pic-container">
+    <img src="http://via.placeholder.com/200x200" class="pic" />
+    <img src="http://via.placeholder.com/200x200" class="pic" />
+    <img src="http://via.placeholder.com/200x200" class="pic" />
+    <a class="pic-caption" href="https://twitter.com/_brunoweb">
+          Hi, i'm Bruno =D       
+    </a>
+</div>
+
+CSS
+* { box-sizing: border-box; }
+body{
+    background: #3d4552;
+    font-family: arial;
+    font-size: 12px;
+    color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+    border: 1px solid #d2d2d2;
+    padding: 3px;
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+
+.pic-container {
+    max-width: 210px;
+    max-height: 210px;
+    margin: 50px;     
+}
+
+.pic {
+    background: #fff;
+    position: absolute;
+    transition: all 0.2s ease;
+    backface-visibility:hidden;}
+
+.pix:nth:child(1) {
+    z-index: 3;
+}
+
+.pic:nth-child(2) {
+    z-index: 1;
+}
+
+.pic:nth-child(3) {
+    z-index: 2;
+}
+
+.pic-container:hover .pic:nth-child(1) {
+    transform: rotate(15deg);
+    transition: all 0.5s ease;
+}
+
+.pic-container:hover .pic:nth-child(2) {
+    transform: rotate(7deg);
+    transition: all 0.10s ease;
+}
+
+.pic-container:hover .pic:nth-child(3) {
+    transform: rotate(-5deg);
+}
+
+.pic-caption {
+    background: #82a3d4;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    top:90px;
+    left: 200px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.pic-caption:hover {
+    background: #607fae;
+}
+.pic-container:hover .pic-caption {
+    left:230px;
+    opacity: 1;
+}
+
+*/
